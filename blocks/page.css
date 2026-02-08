@@ -1,0 +1,14 @@
+/* global styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  min-height: 100vh;
+  font-family: "Inter", Arial, sans-serif;
+  color: #ffffff;
+  background-color: #2a2c2f;
+}
