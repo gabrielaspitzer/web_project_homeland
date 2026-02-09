@@ -12,3 +12,13 @@
   color: #ffffff;
   background-color: #2a2c2f;
 }
+
+.content {
+  padding: 0 148px;
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 0 24px;
+  }
+}

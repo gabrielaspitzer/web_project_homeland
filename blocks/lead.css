@@ -1,1 +1,57 @@
 /* lead styles */
+
+.lead {
+  display: flex;
+  flex-direction: column;
+  max-width: 984px;
+  align-items: center; /* center children horizontally inside the container */
+  margin: 0 auto 92px; /* center the lead section itself and add space between the lead and intro sections */
+  padding-top: 194px;
+}
+
+.lead__title {
+  max-width: 720px; /* make the title responsive */
+  width: 100%; /* make the title shrink in small screens */
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  text-align: center;
+  margin-bottom: 32px; /* title → subtitle */
+}
+
+.lead__subtitle {
+  max-width: 720px; /* make the subtitle responsive */
+  width: 100%; /* make the subtitle shrink in small screens */
+  font-family: "Inter", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  margin-bottom: 64px; /* subtitle → image */
+}
+
+.lead__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .lead {
+    max-width: 768px;
+    padding-top: 186px;
+    margin-bottom: 90px;
+  }
+
+  .lead__title {
+    max-width: 530px;
+    font-size: 75px;
+    line-height: 79px;
+    margin-bottom: 25px;
+  }
+
+  .lead__subtitle {
+    margin-bottom: 30px;
+  }
+}

@@ -1,7 +1,18 @@
 /* header styles */
 
 .header {
+  padding-top: 34px;
 }
 
 .header__logo {
+  display: block;
+  margin: 0 auto;
+  width: 254px;
+  height: 70px;
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding-top: 30px;
+  }
 }
