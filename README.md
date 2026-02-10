@@ -4,7 +4,7 @@ A responsive landing page presenting an art gallery concept with a clean layout,
 
 ## 🚀 GitHub Page
 
-[View the project on GitHub Pages](https://)
+[View the project on GitHub Pages](https://gabrielaspitzer.github.io/web_project_homeland/)
 
 ## 🛠️ Technologies Used
 
