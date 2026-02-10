@@ -68,3 +68,22 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 320px) {
+  .intro {
+    max-width: 288px;
+    width: 100%;
+    margin-bottom: 64px;
+  }
+
+  .intro__title {
+    font-size: 32px;
+    line-height: 35px;
+    margin-bottom: 40px;
+  }
+
+  .intro__text {
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}
