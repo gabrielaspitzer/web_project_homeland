@@ -1,0 +1,14 @@
+.photo-grid {
+  padding: 0 48px; /* horizontal padding for the photo grid */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 0 auto 92px; /* space between photo-grid and next section */
+}
+
+.photo-grid__item {
+  width: 100%; /* ensure images take full width of their grid cell */
+  height: 213px;
+  object-fit: cover; /* ensure images cover the grid cell without distortion */
+  display: block; /* remove default inline spacing */
+}
