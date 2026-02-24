@@ -12,3 +12,28 @@
   object-fit: cover; /* ensure images cover the grid cell without distortion */
   display: block; /* remove default inline spacing */
 }
+
+@media screen and (max-width: 768px) {
+  .photo-grid {
+    padding: 0 24px; /* reduce horizontal padding on smaller screens */
+    grid-template-columns: repeat(2, 1fr); /* switch to 2 columns */
+    margin-bottom: 88px; /* adjust bottom margin for smaller screens */
+  }
+
+  .photo-grid__item {
+    height: 264px; /* increase height for better visibility on smaller screens */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .photo-grid {
+    padding: 0 16px; /* reduce horizontal padding on smaller screens */
+    grid-template-columns: 1fr; /* switch to 1 column */
+    gap: 12px;
+    margin-bottom: 62px; /* adjust bottom margin for smaller screens */
+  }
+
+  .photo-grid__item {
+    height: 216px; /* reduce height for better visibility on smaller screens */
+  }
+}

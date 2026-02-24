@@ -47,7 +47,7 @@
 @media screen and (max-width: 768px) {
   .intro {
     max-width: 720px;
-    margin-bottom: 88px;
+    margin-bottom: 64px;
   }
 
   .intro__title {
@@ -73,7 +73,7 @@
   .intro {
     max-width: 288px;
     width: 100%;
-    margin-bottom: 64px;
+    margin-bottom: 38px;
   }
 
   .intro__title {
