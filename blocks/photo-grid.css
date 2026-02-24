@@ -1,0 +1,39 @@
+.photo-grid {
+  padding: 0 48px; /* horizontal padding for the photo grid */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin: 0 auto 92px; /* space between photo-grid and next section */
+}
+
+.photo-grid__item {
+  width: 100%; /* ensure images take full width of their grid cell */
+  height: 213px;
+  object-fit: cover; /* ensure images cover the grid cell without distortion */
+  display: block; /* remove default inline spacing */
+}
+
+@media screen and (max-width: 768px) {
+  .photo-grid {
+    padding: 0 24px; /* reduce horizontal padding on smaller screens */
+    grid-template-columns: repeat(2, 1fr); /* switch to 2 columns */
+    margin-bottom: 88px; /* adjust bottom margin for smaller screens */
+  }
+
+  .photo-grid__item {
+    height: 264px; /* increase height for better visibility on smaller screens */
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .photo-grid {
+    padding: 0 16px; /* reduce horizontal padding on smaller screens */
+    grid-template-columns: 1fr; /* switch to 1 column */
+    gap: 12px;
+    margin-bottom: 62px; /* adjust bottom margin for smaller screens */
+  }
+
+  .photo-grid__item {
+    height: 216px; /* reduce height for better visibility on smaller screens */
+  }
+}
