@@ -78,6 +78,7 @@
   flex-direction: column;
   gap: 25px;
 }
+
 .place__paragraph {
   font-size: 18px;
   font-weight: 400;
@@ -102,4 +103,45 @@
   box-shadow: 5px 5px 10px 0px #00000040;
 
   width: fit-content; /* Adjust the width based on the content */
+}
+
+@media screen and (max-width: 768px) {
+  .places {
+    max-width: 720px;
+    margin: 0 auto 90px; /* Centers the container and adds bottom margin */
+    padding: 0 24px; /* Adds horizontal padding for smaller screens */
+    row-gap: 72px; /* Adjusts vertical spacing for smaller screens between the place sections */
+  }
+
+  .place {
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    column-gap: 28px;
+  }
+
+  .place__title {
+    max-width: 340px;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 46px;
+    color: #ffffff;
+  }
+
+  .place__website {
+    max-width: 352px;
+  }
+
+  .place__image {
+    width: 340px;
+    height: 340px;
+  }
+
+  .place__paragraph {
+    font-size: 16px;
+  }
+
+  .place__button {
+    white-space: nowrap; /* Prevents the button text from wrapping to multiple lines */
+    max-width: 355px;
+  }
 }
